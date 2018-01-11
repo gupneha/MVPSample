@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/general_screen_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_inputbox"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/padding_input_box"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_screen_padding"
+                android:background="@drawable/back_inputbox"
+                android:hint="@string/hint_password"
+                android:inputType="numberPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/padding_input_box"
+                android:textSize="@dimen/font_normal"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_submit"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/progress_bar"
+            android:layout_height="@dimen/progress_bar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

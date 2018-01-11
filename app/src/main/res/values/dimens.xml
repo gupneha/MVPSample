@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="general_screen_padding">20dp</dimen>
+
+    <dimen name="padding_input_box">10dp</dimen>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="progress_bar">55dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+
+
+    <!-- Font Sizes -->
+    <dimen name="font_xlarge">18sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+
+</resources>
